@@ -1,0 +1,267 @@
+* {
+    font-family: Bebas Neue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-container {
+    width: 70px;
+    height: 100%;
+    background-color: rgb(93, 93, 230);
+    position: fixed;
+    left: 0;
+    transition: width 0.5s;
+    top: 0;
+    padding: 0 10px;
+    box-shadow: 1px 2px 22px -8px black;
+    z-index: 9999;
+}
+
+.sidebar-container:hover {
+    width: 150px;
+    transition: width 0.5s;
+}
+
+.ul-sidebarlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+
+.ul-sidebarlist li i {
+    font-size: 2rem;
+}
+
+.ul-sidebarlist li p {
+    display: none;
+}
+
+.sidebar-container:hover .ul-sidebarlist li p {
+    display: block;
+}
+
+.ul-sidebarlist li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    gap: 10px;
+}
+
+.ul-sidebarlist li:hover {
+    color: rgb(93, 93, 230);
+    background-color: #fff;
+}
+
+
+.sidebar-container picture img {
+    width: 50px;
+}
+
+section{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* width: calc(100vw - 200px);  */
+    padding: 20px 10px;
+    z-index: 9999;
+    /* opacity: 1; */
+}
+
+section > main {
+    width: calc(95vw - 200px);
+    /* background-color: aqua; */
+}
+
+.banner{
+    left: 10px;
+    bottom: -10px;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    /* opacity: 0.3; */
+    filter: blur(15px);
+    position: fixed;
+    z-index: -1 !important;
+}
+
+.content{
+    font-size: x-large;
+    padding: 0 100px;
+}
+
+
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:  rgb(93, 93, 230);
+}
+
+footer{
+    width: 100%;
+    height: 160px;
+    background-color:  rgb(93, 93, 230);
+}
+
+h1{
+    color: #fff;
+    font-size: 3em;
+}
+
+/* 
+dasdasd
+*/
+.introduction-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+.introduction-container > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-container > main > div > input {
+    width: calc(100vw - 1000px);
+    height: 5vh;
+    padding: 0 10px;
+}
+
+.introduction-container > main > div > button {
+    width: calc(10vw);
+    height: 5vh;
+}
+
+.about-container > main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-container-about{
+    width: 40vw;
+    height: 90vh;
+    z-index: 9999 !important;
+    display: flex;
+    align-items: center;
+}
+
+.card-container-about p{
+    font-size: 2em;
+    color: #fff;
+}
+
+.photo{
+    animation: photos infinite ease 10s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 2px 22px -8px black;
+}
+
+.card-container-tec{
+    width: 200px;
+    height: 200px;
+    z-index: 9999 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(93, 93, 230);
+
+    box-shadow: 1px 2px 22px -8px black;
+}
+
+.tec-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tec-itens{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes photos {
+    0%{
+        background-image: url(./../assets/banner/10001.jpg);
+    }
+    20%{
+        background-image: url(./../assets/banner/10002.jpg);
+    }
+    40%{
+        background-image: url(./../assets/banner/10003.jpg);
+    }
+    60%{
+        background-image: url(./../assets/banner/10004.jpg);
+    }
+    80%{
+        background-image: url(./../assets/banner/10005.jpg);
+    }
+    100%{
+        background-image: url(./../assets/banner/10007.jpg);
+    }
+}
+
+@media (max-width: 836px) {
+    .about-container main {
+        flex-direction: column;
+    }
+
+    .card-container-about{
+        width: 100%;
+        height: 40vh;
+        z-index: 9999 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .card-container-about p{
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    .introduction-container > main > div > button {
+        width: calc(18vw);
+        height: 6vh;
+    }
+
+    .about-container main {
+        width: 90%;
+    }
+
+    .tec-container{
+        
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .tec-itens{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    
+}

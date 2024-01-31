@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+    <head>
+        <div class="sidebar-container">
+            <nav>
+                <picture>
+                    <img src="./assets/logo.png">
+                </picture>
+            </nav>
+            <!-- <nav> -->
+            <ul class="ul-sidebarlist">
+                <li>
+                    <i class='bx bx-home-alt-2'></i>
+                    <p>Inicio</p>
+                </li>
+                <li>
+                    <i class='bx bx-time-five'></i>
+                    <p>Timeline</p>
+                </li>
+                <li>
+                    <i class='bx bx-rocket'></i>
+                    <p>Space</p>
+                </li>
+                <li>
+                    <i class='bx bx-user'></i>
+                    <p>Entrar</p>
+                </li>
+            </ul>
+            <!-- </nav> -->
+        </div>
+    </head>
+    <main>
+
+
+        <section class="introduction-container" id="main">
+            <main>
+                <h1 id="intro-animation">
+                    Hey, tudo bem?
+
+                    Me chamo Anselmo
+                </h1>
+                <!-- <div>
+                    <input type="text" placeholder="digite o que está buscando">
+                    <button>Buscar</button>
+                </div> -->
+
+                <div>
+                    <button onclick="scrollToNextSection()">Bora se apresentar?</button>
+                </div>
+            </main>
+        </section>
+        <section class="about-container" id="prod">
+            <main>
+                <div class="card-container-about">
+                    <p>Eu me chamo Anselmo. E nessa foto eu havia acabado de fazer a matrícula na UFC</p>
+                </div>
+                <div class="card-container-about photo" id="banner-image"></div>
+            </main>
+
+            <div>
+                <button onclick="scrollToNextSection()">Saiba mais</button>
+            </div>
+        </section>
+        <section class="tec-container" id="tec">
+            <h3 style="color: #fff;">Tecnologias</h3>
+            <div class="tec-itens">
+                <div class="card-container-tec">
+                    <h3>Web Fronted</h3>
+                    <hr style="width: 100px; background-color: black; border: 1px solid black;">
+                    <ul>
+                        <li>
+                            ReactJs
+                        </li>
+                        <li>
+                            AngularJs
+                        </li>
+                        <li>
+                            Angular9
+                        </li>
+                        <li>
+                            NextJs
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-container-tec">
+                    <h3>Web Backend</h3>
+                    <hr style="width: 100px; background-color: black; border: 1px solid black;">
+                    <ul>
+                        <li>
+                            NodeJs
+                        </li>
+                        <li>
+                            NextJs
+                        </li>
+                        <li>
+                            Laravel
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-container-tec">
+                    <h3>Mobile Fronted</h3>
+                    <hr style="width: 100px; background-color: black; border: 1px solid black;">
+                    <ul>
+                        <li>
+                            React Native
+                        </li>
+                        <li>
+                            Expo
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>Feito com SZ</footer>
+    <video class="banner" autoplay muted loop id="myVideo" src="./assets/banner/video1.mp4"></video>
+</body>
+<script src="./src/index.js"></script>
+<script>
+    function addTeste() {
+        $('#btn').addClass('teste')
+    }
+</script>
+
+</html>
